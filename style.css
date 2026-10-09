@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url("/resources/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/resources/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/resources/fonts/Montserrat-Medium.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Website banner at the top */
+div#banner {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+}
+
+div#banner-img-container {
+    width: 150px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+img#banner-pic {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: antiquewhite;
+	font-size: 60px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+	   font-size: 28px;
+}
+
+h3 {
+    color: forestgreen;
+    padding: 1rem 5rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    line-height: 1.2;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Styling for all the rows */
+div.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+/* Styling for the columns inside each row */
+div.column {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Styling for odd-numbered rows */
+.row:nth-child(odd) {
+    background-color: darkslategray;
+}
+
+/* Styling for even-numbered rows */
+.row:nth-child(even) {
+    background-color:limegreen; ;
+    flex-direction: row-reverse;
+    color: #ffffff;
+}
+
+div.text-column {
+    flex: 3;
+}
+
+div.img-column {
+    flex: 1;
+}
+
+@media (max-width: 414px) {
+    div.row {
+        flex-direction: column;
+    }
+    .row:nth-child(even) {
+        flex-direction: column;
+    }
+}
