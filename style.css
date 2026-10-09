@@ -24,7 +24,7 @@ body {
 
 /* Website banner at the top */
 div#banner {
-    background-color: darkolivegreen;
+    background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,12 +91,12 @@ img {
 
 /* Styling for odd-numbered rows */
 .row:nth-child(odd) {
-    background-color: darkslategray;
+    background-color: white;
 }
 
 /* Styling for even-numbered rows */
 .row:nth-child(even) {
-    background-color:limegreen; ;
+    background-color:lightgoldenrodyellow;yellow; ;
     flex-direction: row-reverse;
     color: #ffffff;
 }
